@@ -1,0 +1,253 @@
+body{
+    background-color: black;
+    color: #D7DAD9;
+    margin: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+a{
+    all: unset;
+    transition: color 0.1s ease;
+}
+a:hover{
+    cursor: pointer;
+}
+a:active{
+    color: #A6CE8A;
+}
+h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: #E9F3E2;
+    padding: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    transition: color 0.2s ease;
+}
+h1:hover{
+    color: #BCDAA7;
+}
+h2{
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin: 0;
+    margin-right: 2%;
+    transition: color 0.2s ease;
+}
+h2:hover{
+    color: #86918D;
+}
+.headerContainer{
+    padding: 0;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: left;
+}
+h3{
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    text-align: left;
+    transition: background-color 0.2s ease; 
+    
+}
+h3:hover{
+    background-color: #0D1710;
+}
+.thumbnail{
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    opacity: 0%;
+    transition: opacity 0.2s ease, left 0.1s ease;
+    z-index: -100;
+}
+.title{
+    display: block;
+    width: 50%;
+}
+.title:hover + .thumbnail{
+    opacity: 100%;
+    left: 59%;
+}
+.thumbnail_image{
+    width: 600px;
+    height: auto;
+}
+h4{
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin:0;
+    padding: 1%;
+}
+h5{
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    margin:0;
+    padding: 1%;
+}
+h6{
+    display: inline;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    margin:0;
+    padding: 1%;
+    transition: color 0.1s ease;
+}
+h6:hover{
+    color: #669743;
+}
+.topImageSpan{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.topImage{
+    position: absolute;
+    top:0%;
+    left:40%;
+    width: 60%;
+    overflow-x: hidden;
+    /* height: auto; */
+    /* overflow-y: hidden; */ 
+    overflow-y: hidden;
+
+    z-index: -101;
+}
+.topParagraph{
+    margin-left: 25%;
+    padding-left: 5%;
+    margin-right: 25%;
+    padding-right: 5%;
+
+    margin-top: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(0, 0, 0, 0.7);
+    /* border-radius: 20px; */
+}
+@media (max-width: 600px) {
+    .topParagraph {
+        margin-left: 5%;
+        margin-right: 25%;
+    }
+}
+.topParagraphText{
+    
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.paragraphs{
+    /* margin: 5%; */
+    display: flex;
+    padding: 5%;
+    /* width: 50%; */
+    background-color: black;
+}
+.spacer30{
+    width: 100vw;
+    max-width: 500px;
+    min-width: 0px;
+    /* background-color: white; */
+}
+mark{
+    background-color: inherit;
+    color: #BCDAA7;
+}
+.italics{
+    font-style: italic;
+}
+.quotesContainer{
+    padding: 0 5%;
+}
+.quotes{
+
+    font-style: italic;
+    font-size: 18px;
+    line-height: 28px;
+    color: #D7DAD9;
+    
+}
+.moreInfo{
+    display:block;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.moreInfo a{
+    transition: color 0.2s ease;
+}
+.moreInfo a:hover{
+    color: #86918D;
+}
+.imageLibraryContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0; 
+}
+.column {
+    flex: 30%;
+    padding: 0 4px;
+}
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+.column img {
+    margin-top: 8px;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.bubble img{
+    border-radius: 30px;
+    width: 24vw;
+
+}
+.elegyLargeImage{
+    border-radius: 5px;
+    /* opacity: 70%; */
+}
+.column iframe{
+  margin-top: 8px;
+  width: 100%;
+  height: 315px;
+  vertical-align: middle;
+}
+.textWithinColumn{
+    padding: 5%;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+footer h6{
+    opacity: 0.6;
+    font-size: 12px;
+    font-weight: 300;;
+    padding: 4px;
+}
