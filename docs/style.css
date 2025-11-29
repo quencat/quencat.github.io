@@ -59,11 +59,11 @@ h3{
     
 }
 h3:hover{
-    background-color: #0D1710;
+    background-color: #0D171080;
 }
 .thumbnail{
     position: absolute;
-    left: 60%;
+    right: 3%;
     top: 25%;
     opacity: 0%;
     transition: opacity 0.2s ease, left 0.1s ease;
@@ -75,11 +75,33 @@ h3:hover{
 }
 .title:hover + .thumbnail{
     opacity: 100%;
-    left: 59%;
+    right: 5%;
 }
 .thumbnail_image{
     width: 600px;
     height: auto;
+}
+@media (max-width: 600px) {
+    h3{
+        padding-top: 3%;
+        padding-bottom: 4%;
+    }
+    h3:hover{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .thumbnail{
+        right: 7%;
+        top: 40%;
+    }
+    .title{
+        width: 100%;
+    }
+    .thumbnail_image{
+        width: 100%;
+    }
+    .title:hover + .thumbnail{
+        right: 0%;
+    }
 }
 h4{
     font-family: "Playfair Display", serif;
@@ -141,14 +163,14 @@ h6:hover{
 @media (max-width: 600px) {
     .topParagraph {
         margin-left: 5%;
-        margin-right: 25%;
+        margin-right: 5%;
     }
 }
 .topParagraphText{
     
     font-family: "Jost", sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 350;
     font-style: normal;
 }
 p{
