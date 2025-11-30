@@ -273,3 +273,23 @@ footer h6{
     font-weight: 300;;
     padding: 4px;
 }
+:root{
+    animation: animate-time 1000ms linear infinite;    
+}
+@keyframes animate-time {
+    from {
+        --t: 0;
+    }
+    to {
+        --t: 100000;
+    }
+}
+.oops{
+    font-size: 200px;
+
+    --time: calc(var(--t) / 1000);
+    --rounded-time: round(nearest, var(--time));
+    
+    font-weight: calc(100 + 8 * var(--rounded-time)) ;
+    transition: font-weight 1s ease-in-out;
+}
