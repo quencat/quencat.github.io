@@ -46,7 +46,7 @@ h2{
     transition: color 0.1s ease;
 }
 h2:hover{
-    color: #94B7A0;
+    color: #4D8861;
 }
 h3{
     font-family: "Playfair Display", serif;
@@ -167,20 +167,23 @@ h6:hover{
     margin-top: 15%;
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: #030502AA;
+    background-color: #030502BB;
     border-radius: 2px;
 }
 @media (max-width: 600px) {
     .topParagraph {
         margin-left: 5%;
         margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 .topParagraphText{
     
     font-family: "Jost", sans-serif;
-    font-size: 20px;
-    font-weight: 350;
+    font-size: 24px;
+    /* font-weight: 350; */
+    line-height: 36px;
     font-style: normal;
 }
 p{
@@ -243,11 +246,6 @@ mark{
     flex: 30%;
     padding: 0 4px;
 }
-@media (max-width: 600px) {
-    .column {
-        flex: 100%;
-    }
-}
 .column img {
     margin-top: 8px;
     width: 100%;
@@ -255,10 +253,24 @@ mark{
     vertical-align: middle;
     border-radius: 2px;
 }
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+.bubbleCont{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin: 4%; */
+    /* justify-content: center; */
+}
 .bubble img{
-    border-radius: 30px;
-    width: 24vw;
-
+    margin-top: 20px;    
+    width: 100%;
+    border-radius: 50px;
+    vertical-align: middle;
+    
 }
 .elegyLargeImage{
     border-radius: 5px;
@@ -272,6 +284,25 @@ mark{
 }
 .textWithinColumn{
     padding: 5%;
+}
+.aboutColCont{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0; 
+}
+.aboutCol{
+    flex: 30%;
+    padding: 0 4px;
+    
+    /* background-color: #7AB550; */
+}
+.aboutTop{
+    /* padding-bottom: 16px; */
+    width: 100%;
+    border-left: 5px solid #B1F8B1;                
+}
+.aboutParagraphs{
+    border-left: 1px solid #4E5046;
 }
 footer{
     display: flex;
@@ -296,7 +327,7 @@ footer h6{
     }
 }
 .oops{
-    font-size: 160px;
+    font-size: 150px;
 
     --time: calc(var(--t) / 1000);
     --rounded-time: round(nearest, var(--time));
