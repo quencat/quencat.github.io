@@ -2,8 +2,8 @@ body{
     background-color: #030502;
     color: #D7DAD9;
     margin: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 a{
     all: unset;
@@ -12,9 +12,9 @@ a{
 a:hover{
     cursor: pointer;
 }
-a:active{
+/* a:active{
     color: #A6CE8A;
-}
+} */
 h1{
     display: inline-block;
     font-family: "Playfair Display", serif;
@@ -43,7 +43,7 @@ h2{
     margin: 0;
     margin-left: 20px;
     margin-right: 16px;
-    transition: color 0.2s ease;
+    transition: color 0.1s ease;
 }
 h2:hover{
     color: #94B7A0;
@@ -57,7 +57,7 @@ h3{
     padding-bottom: 14px;
     padding-left: 4px;
     text-align: left;
-    transition: background-color 0.1s ease-in, color 0.1s ease, padding-left 0.1s ease; 
+    transition: background-color 0.1s ease, color 0.1s ease, padding-left 0.1s ease; 
     border-radius: 2px;
     border-bottom: 1px solid #4E5046;
     
@@ -65,11 +65,11 @@ h3{
 h3:hover{
     color: #000000;
     background-color: #7AB550;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .thumbnail{
     position: absolute;
-    right: 3%;
+    right: 4vw;
     top: 25%;
     opacity: 0%;
     transition: opacity 0.2s ease, right 0.1s ease;
@@ -81,7 +81,7 @@ h3:hover{
 }
 .title:hover + .thumbnail{
     opacity: 100%;
-    right: 4%;
+    right: 5vw;
 }
 .thumbnail_image{
     border-radius: 2px;
@@ -135,7 +135,7 @@ h6{
     font-weight: 300;
     font-style: normal;
     margin:0;
-    padding: 1%;
+    padding: 4px;
     transition: color 0.1s ease;
 }
 h6:hover{
@@ -149,25 +149,26 @@ h6:hover{
 .topImage{
     position: absolute;
     top:0%;
-    left:40%;
-    width: 60%;
+    /* left:40%; */
+    right: 0;
+    width: 62vw;
     overflow-x: hidden;
     /* height: auto; */
-    /* overflow-y: hidden; */ 
     overflow-y: hidden;
     z-index: -101;
 }
 .topParagraph{
-    margin-left: 25%;
-    padding-left: 5%;
-    margin-right: 25%;
-    padding-right: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    padding-left: 10%;
+    padding-right: 10%;
 
     margin-top: 15%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-color: rgb(0, 0, 0, 0.7);
-    /* border-radius: 20px; */
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #030502AA;
+    border-radius: 2px;
 }
 @media (max-width: 600px) {
     .topParagraph {
@@ -206,7 +207,7 @@ p{
 }
 mark{
     background-color: inherit;
-    color: #BCDAA7;
+    color: #B1F8B1;
 }
 .italics{
     font-style: italic;
@@ -252,6 +253,7 @@ mark{
     width: 100%;
     height: auto;
     vertical-align: middle;
+    border-radius: 2px;
 }
 .bubble img{
     border-radius: 30px;
