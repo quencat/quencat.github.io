@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding-left: 5vw;
     padding-right: 5vw;
+    overflow-x: hidden;
 }
 a{
     all: unset;
@@ -267,7 +268,7 @@ mark{
 }
 .bubble img{
     margin-top: 20px;    
-    width: 100%;
+    width: 90%;
     border-radius: 50px;
     vertical-align: middle;
     
