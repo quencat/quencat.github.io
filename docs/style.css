@@ -172,8 +172,8 @@ h6:hover{
 }
 @media (max-width: 600px) {
     .topParagraph {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
         padding-left: 5%;
         padding-right: 5%;
     }
