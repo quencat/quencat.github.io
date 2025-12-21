@@ -5,13 +5,14 @@ body{
     padding-left: 5vw;
     padding-right: 5vw;
     overflow-x: hidden;
+    cursor: url('img/cursorQ.png'), auto;
 }
 a{
     all: unset;
     transition: color 0.1s ease;
 }
 a:hover{
-    cursor: pointer;
+    cursor: url('img/cursorPointer.png'), auto;
 }
 /* a:active{
     color: #A6CE8A;
@@ -61,10 +62,9 @@ h3{
     transition: background-color 0.1s ease, color 0.1s ease, padding-left 0.1s ease; 
     border-radius: 2px;
     border-bottom: 1px solid #4E5046;
-    
 }
 h3:hover{
-    color: #000000;
+    color: #030502;
     background-color: #7AB550;
     padding-left: 20px;
 }
@@ -90,13 +90,20 @@ h3:hover{
     height: auto;
 }
 @media (max-width: 600px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 16px;
+    }
     h3{
+        font-size: 20px;
         padding-top: 3%;
         padding-bottom: 4%;
     }
     h3:hover{
-        background-color: rgba(0, 0, 0, 0);
-        color:#B8CFC0;
+        background-color: #7AB55099;
+        color:white;
     }
     .thumbnail{
         right: 7%;
@@ -120,6 +127,11 @@ h4{
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 4px;
+}
+@media (max-width: 600px){
+    h4{
+        font-size: 20px;
+    }
 }
 h5{
     font-family: "Jost", sans-serif;
@@ -254,11 +266,6 @@ mark{
     vertical-align: middle;
     border-radius: 2px;
 }
-@media (max-width: 600px) {
-    .column {
-        flex: 100%;
-    }
-}
 .bubbleCont{
     display: flex;
     flex-wrap: wrap;
@@ -269,9 +276,16 @@ mark{
 .bubble img{
     margin-top: 20px;    
     width: 90%;
+    height: auto;
     border-radius: 50px;
     vertical-align: middle;
     
+}
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        padding: 0;
+    }
 }
 .elegyLargeImage{
     border-radius: 5px;
