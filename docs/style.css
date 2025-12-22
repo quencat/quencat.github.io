@@ -1,5 +1,5 @@
 body{
-    background-color: #030502;
+    background-color: #141B15;
     color: #D7DAD9;
     margin: 0;
     padding-left: 5vw;
@@ -213,7 +213,7 @@ p{
     display: flex;
     padding: 5%;
     /* width: 50%; */
-    background-color: #030502;
+    background-color: #141B15;
 }
 .spacer30{
     width: 40%;
