@@ -180,8 +180,14 @@ h6:hover{
     margin-top: 15%;
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: #030502BB;
-    border-radius: 2px;
+    background-color: #0A0F07BB;
+    border-radius: 40px 2px;
+
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.topParagraph.is-revealed{
+    opacity: 1;
 }
 @media (max-width: 600px) {
     .topParagraph {
@@ -207,7 +213,13 @@ p{
     line-height: 30px;
     padding-left: 5%;
     padding-right: 5%;
+    opacity: 0;
+    transition: opacity 0.6s ease;
 }
+p.is-revealed{
+    opacity: 1;
+}
+
 .paragraphs{
     /* margin: 5%; */
     display: flex;
@@ -281,12 +293,7 @@ mark{
     vertical-align: middle;
     
 }
-@media (max-width: 600px) {
-    .column {
-        flex: 100%;
-        padding: 0;
-    }
-}
+
 .elegyLargeImage{
     border-radius: 5px;
     /* opacity: 70%; */
@@ -313,11 +320,21 @@ mark{
 }
 .aboutTop{
     /* padding-bottom: 16px; */
-    width: 100%;
+    /* width: 100%; */
     border-left: 5px solid #B1F8B1;                
 }
 .aboutParagraphs{
     border-left: 1px solid #4E5046;
+}
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        padding: 0;
+    }
+    .aboutCol{
+        flex: 100%;
+        padding: 0;
+    }
 }
 footer{
     display: flex;
