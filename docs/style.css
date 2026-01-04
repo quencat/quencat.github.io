@@ -1,18 +1,19 @@
 body{
-    background-color: #141B15;
+    background-color: #161916;
     color: #D7DAD9;
     margin: 0;
     padding-left: 5vw;
     padding-right: 5vw;
     overflow-x: hidden;
-    cursor: url('img/cursorQ.png'), auto;
+    /* cursor: url('img/cursorQ.png'), auto; */
 }
 a{
     all: unset;
     transition: color 0.1s ease;
 }
 a:hover{
-    cursor: url('img/cursorPointer.png'), auto;
+    /* cursor: url('img/cursorPointer.png'), auto; */
+    cursor: pointer;
 }
 /* a:active{
     color: #A6CE8A;
@@ -189,14 +190,6 @@ h6:hover{
 .topParagraph.is-revealed{
     opacity: 1;
 }
-@media (max-width: 600px) {
-    .topParagraph {
-        margin-left: 2%;
-        margin-right: 2%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-}
 .topParagraphText{
     
     font-family: "Jost", sans-serif;
@@ -215,6 +208,20 @@ p{
     padding-right: 5%;
     opacity: 0;
     transition: opacity 0.6s ease;
+}
+@media (max-width: 600px){
+    .topParagraph {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .topParagraphText{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
 }
 p.is-revealed{
     opacity: 1;
@@ -235,7 +242,7 @@ p.is-revealed{
 }
 mark{
     background-color: inherit;
-    color: #B1F8B1;
+    color: #C0FAC0;
 }
 .italics{
     font-style: italic;
