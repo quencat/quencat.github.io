@@ -60,34 +60,78 @@ h3{
     padding-bottom: 14px;
     padding-left: 4px;
     text-align: left;
-    transition: background-color 0.1s ease, color 0.1s ease, padding-left 0.1s ease; 
-    border-radius: 2px;
+    transition: color 0.1s ease, padding-left 0.1s ease, font-weight 0.1s ease; 
+
     border-bottom: 1px solid #4E5046;
+    z-index: 100;
 }
 h3:hover{
     color: #030502;
-    background-color: #7AB550;
-    padding-left: 20px;
+    font-weight: 650;
+    /* background-color: #7AB550; */
+    /* background: linear-gradient(90deg, #D7DAD9 0%, #7AB550 50%); */
+    /* background: linear-gradient(50% 50% at 50% 50%, #D7DAD9 0%, #7AB550 100%); */
+    padding-left: 24px;
+    
 }
-.thumbnail{
-    position: absolute;
-    right: 4vw;
-    top: 25%;
-    opacity: 0%;
-    transition: opacity 0.2s ease, right 0.1s ease;
-    z-index: -100;
-}
+
 .title{
     display: block;
-    width: 46%;
+    width: 24%;
+    /* padding-right: 5px; */
+    /* background: linear-gradient(90deg, #000000 0%, #7AB550 50%); */
+    position: relative;
 }
-.title:hover + .thumbnail{
+.title:hover .thumbnail{
     opacity: 100%;
     right: 5vw;
 }
+.title::before{
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 2px;
+    background: radial-gradient(50% 80% at 20% 50%, #EEF2DA 0%, #7AB550 100%);;
+    transition: opacity 0.2s ease;    
+}
+.title:hover::before{
+    opacity: 1;
+}
+.subhead{
+    position: absolute;
+    white-space: nowrap;
+    left:0%;
+    top:0;
+    opacity: 0;
+    font-size: 16px;
+    font-style: italic;
+    transition: opacity 0.2s ease, left 0.2s ease;
+    z-index: -100;
+    background-color: #030502;
+}
+.title:hover .subhead{
+    opacity: 100%;
+    left: 100%;
+
+}
+.thumbnail{
+    position: fixed;
+    right: 4vw;
+    /* top: 25%; */
+    top: 8vh;
+    opacity: 0%;
+    transition: opacity 0.2s ease, right 0.1s ease;
+    z-index: -101;
+}
 .thumbnail_image{
     border-radius: 2px;
-    width: 624px;
+    /* width: 844px; */
+    width: 58vw;
     height: auto;
 }
 @media (max-width: 600px) {
@@ -193,7 +237,7 @@ h6:hover{
 .topParagraphText{
     
     font-family: "Jost", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     /* font-weight: 350; */
     line-height: 36px;
     font-style: normal;

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Select all elements with the 'scroll-reveal-item' class
-    const revealElements = document.querySelectorAll("p, .topParagraph");
+    const revealElements = document.querySelectorAll("p:not(.subhead), .topParagraph");
 
     // Configure the observer
     const observerOptions = {
