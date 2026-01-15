@@ -160,8 +160,11 @@ h3:hover{
     .thumbnail_image{
         width: 100%;
     }
-    .title:hover + .thumbnail{
+    .title:hover .thumbnail{
         right: 0%;
+    }
+    .subhead{
+        display: none;
     }
 }
 h4{
@@ -262,6 +265,7 @@ p{
     }
     .topParagraphText{
         font-size: 18px;
+        line-height: 32px;
     }
     p{
         font-size: 16px;
