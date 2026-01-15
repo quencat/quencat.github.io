@@ -96,7 +96,7 @@ h3:hover{
     bottom: 0;
     z-index: -1;
     border-radius: 2px;
-    background: radial-gradient(50% 80% at 20% 50%, #EEF2DA 0%, #7AB550 100%);;
+    background: radial-gradient(50% 80% at 20% 50%, #EEF2DA 0%, #7AB550 100%);
     transition: opacity 0.2s ease;    
 }
 .title:hover::before{
@@ -395,7 +395,7 @@ footer{
 footer h6{
     opacity: 0.6;
     font-size: 12px;
-    font-weight: 300;;
+    font-weight: 300;
     padding: 4px;
 }
 :root{
