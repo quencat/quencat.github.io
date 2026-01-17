@@ -13,6 +13,8 @@ const rainIndex = [15];
 document.addEventListener('DOMContentLoaded', function() {
     for (let i = 0; i < 23; i++){
         images.push("img/thumbnail/smallThumbnailLibrary/sm" + i + ".jpg");
+        const img = new Image();
+        img.src = "img/thumbnail/smallThumbnailLibrary/sm" + i + ".jpg";
     }
     // console.log(images.length);
 });
