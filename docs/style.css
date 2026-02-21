@@ -230,7 +230,7 @@ h6:hover{
     z-index: -101;
 }
 .topParagraph{
-    margin-left: 20%;
+    /* margin-left: 20%;
     margin-right: 20%;
 
     padding-left: 10%;
@@ -238,9 +238,26 @@ h6:hover{
 
     margin-top: 15%;
     padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: #0A0F07BB;
-    border-radius: 40px 2px;
+    padding-bottom: 32px; */
+
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-left: 4px;
+    padding-right: 4px;
+
+    margin-top: 20%;
+    padding-top: 0;
+    padding-bottom: 0;
+
+
+
+
+
+    /* background-color: #0A0F07BB; */
+    background-color: #0A0F0770;
+    border-radius: 2px 2px 40px 2px;
+
 
     opacity: 0;
     transition: opacity 0.6s ease;
@@ -251,9 +268,18 @@ h6:hover{
 .topParagraphText{
     
     font-family: "Jost", sans-serif;
-    font-size: 22px;
-    /* font-weight: 350; */
-    line-height: 36px;
+    /* font-size: 22px; */
+    /* line-height: 36px; */
+    font-size: 50px;
+    line-height: 60px;
+    /* hyphens: auto; */
+    text-align: justify;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    font-weight: 324;
+
     font-style: normal;
 }
 p{
