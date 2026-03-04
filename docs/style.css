@@ -1,5 +1,9 @@
 body{
+
+    background-image: url("img/background.jpg");
     background-color: #161916;
+    background-size: cover;
+    background-attachment: fixed;
     color: #D7DAD9;
     margin: 0;
     padding-left: 5vw;
@@ -322,7 +326,7 @@ p.is-revealed{
     display: flex;
     padding: 5%;
     /* width: 50%; */
-    background-color: #141B15;
+    /* background-color: #141B15; */
 }
 .spacer30{
     width: 40%;
