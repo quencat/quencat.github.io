@@ -62,4 +62,4 @@ function changeImage() {
     lastChange = roll;
 }
 
-setInterval(changeImage, 2500);
+setInterval(changeImage, 3000);

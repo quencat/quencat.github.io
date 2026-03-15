@@ -6,8 +6,8 @@ body{
     background-attachment: fixed;
     color: #D7DAD9;
     margin: 0;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
     overflow-x: hidden;
     /* cursor: url('img/cursorQ.png'), auto; */
 }
@@ -24,14 +24,15 @@ a:hover{
 } */
 h1{
     display: inline-block;
-    font-family: "Playfair", serif;
+    /* font-family: "Playfair", serif; */
     /* font-family: "Vollkorn", serif; */
-    font-weight: 700;
-    font-size: 72px;
+    font-family: "Jost", sans-serif;
+    font-weight: 450;
+    font-size: 70px;
     color: #E9F3E2;
     padding: 0;
-    margin-top: 5vh;
-    margin-bottom: 16px;
+    margin-top: 0px;
+    margin-bottom: 4px;
     transition: color 0.2s ease;
 }
 h1:hover{
@@ -47,18 +48,20 @@ h2{
     font-family: "Playfair", serif;
     font-size: 20px;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: 16px;
     transition: color 0.1s ease;
 }
 h2:hover{
     color: #4D8861;
+    background-color: #D7DAD9;
 }
 h3{
-    font-family: "Playfair", serif;
-    font-size: 24px;
+    /* font-family: "Playfair", serif; */
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
     font-weight: 400;
     margin: 0;
     padding-top: 14px;
@@ -66,30 +69,30 @@ h3{
     padding-left: 4px;
     text-align: left;
     transition: color 0.1s ease, padding-left 0.1s ease, font-weight 0.1s ease, border-bottom 0.1s ease; 
-    border-radius: 2px;
-    border-bottom: 4px dotted #4E5046;
+    /* border-radius: 2px; */
+    border-bottom: 8px dotted #4E504680;
     z-index: 100;
 }
 h3:hover{
     color: #161916;
-    font-weight: 650;
+    font-weight: 600;
     /* background-color: #7AB550; */
     /* background: linear-gradient(90deg, #D7DAD9 0%, #7AB550 50%); */
     /* background: linear-gradient(50% 50% at 50% 50%, #D7DAD9 0%, #7AB550 100%); */
     padding-left: 30px;
-    border-bottom: 4px dotted #4E504600;    
+    border-bottom: 8px dotted #4E504600;
 }
 
 .title{
     display: block;
-    width: 24%;
+    width: 24vw;
     /* padding-right: 5px; */
     /* background: linear-gradient(90deg, #000000 0%, #7AB550 50%); */
     position: relative;
 }
 .title:hover .thumbnail{
     opacity: 100%;
-    right: 5vw;
+    right: 1vw;
 
 }
 .title::before{
@@ -99,9 +102,9 @@ h3:hover{
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 4px;
     z-index: -1;
-    border-radius: 4px;
+    border-radius: 8px;
     background: radial-gradient(50% 80% at 20% 50%, #EEF2DA 0%, #7AB550 100%);
     transition: opacity 0.2s ease;    
     
@@ -133,7 +136,7 @@ h3:hover{
     position: fixed;
     right: 4vw;
     /* top: 25%; */
-    top: 10vh;
+    top: 30px;
     opacity: 0%;
     transition: opacity 0.3s ease, right 0.3s ease;
     z-index: -101;
@@ -142,7 +145,7 @@ h3:hover{
     border-radius: 2px;
     /* width: 844px; */
     /* width: 58vw; */
-    width: 66vw;
+    width: 72vw;
     height: auto;
     
     box-shadow: 12px 12px 16px #070A0490;
@@ -184,8 +187,8 @@ h3:hover{
     }
 }
 h4{
-    font-family: "Playfair", serif;
-    font-size: 24px;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
     font-weight: 400;
     margin: 0;
     padding-top: 14px;
@@ -385,17 +388,17 @@ mark{
     flex-wrap: wrap;
     padding: 0; 
     position: absolute;
-    width: 66%;
-    top:8vh;
-    right:5vw;
-    z-index: 1;
+    width: 72vw;
+    top:0;
+    right:1vw;
+    /* z-index: 1; */
 }
 .columnMain{
     flex: 30;
-    padding: 0px 24px;
+    padding: 0px 30px;
 }
 .columnMain .smallImg {
-    margin: 24px;
+    margin: 30px;
     width: 100%;
     height: auto;
     vertical-align: middle;
@@ -480,7 +483,10 @@ mark{
 footer{
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 8px;
+    /* position: fixed;
+    bottom: 4px;
+    right: 1vw; */
+    margin-bottom: 4px;
 }
 footer h6{
     opacity: 0.6;
