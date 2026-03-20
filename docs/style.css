@@ -1,5 +1,4 @@
 body{
-
     background-image: url("img/background.jpg");
     background-color: #161916;
     background-size: cover;
@@ -37,6 +36,7 @@ h1{
 }
 h1:hover{
     color: #7AB550;
+    rotate: -4deg;
 }
 .headerContainer{
     padding: 0;
@@ -52,11 +52,12 @@ h2{
     margin: 0;
     margin-left: 40px;
     margin-right: 16px;
-    transition: color 0.1s ease;
+    /* transition: color 0.1s ease; */
 }
 h2:hover{
-    color: #4D8861;
-    background-color: #D7DAD9;
+    color: #1B291B;
+    background-color: #D7DAD9;    
+    rotate: -4deg;
 }
 h3{
     /* font-family: "Playfair", serif; */
@@ -89,13 +90,50 @@ h3:hover{
     /* padding-right: 5px; */
     /* background: linear-gradient(90deg, #000000 0%, #7AB550 50%); */
     position: relative;
+
 }
 .title:hover .thumbnail{
     opacity: 100%;
     right: 1vw;
 
 }
+@property --deg{
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+}
 .title::before{
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: 0px;
+    /* padding-bottom: 70px; */
+    /* padding-right: 400px; */
+    z-index: -1;
+    border-radius: 20px;
+    /* background: radial-gradient(50% 80% at 20% 50%, #EEF2DA 0%, #7AB550 100%); */
+    background: conic-gradient(
+        from var(--deg) at center,
+
+        #541EC8,
+        #9F172B,
+        #235D36,
+        #7C169C
+    );
+    transition: opacity 0.2s ease;    
+    filter: blur(4px);
+    /* box-shadow: 8px 8px 12px #070A0490; */
+    animation: autoRotate 2s linear infinite;
+}
+@keyframes autoRotate{
+    to{
+        --deg: 360deg;
+    }
+}
+.title::after{
     opacity: 0;
     content: "";
     position: absolute;
@@ -104,15 +142,19 @@ h3:hover{
     right: 0;
     bottom: 4px;
     z-index: -1;
-    border-radius: 8px;
+    border-radius: 16px;
     background: radial-gradient(50% 80% at 20% 50%, #EEF2DA 0%, #7AB550 100%);
     transition: opacity 0.2s ease;    
-    
-    box-shadow: 8px 8px 12px #070A0490;
+
+    /* box-shadow: 8px 8px 12px #070A0490; */
 }
 .title:hover::before{
+    opacity: 1;    
+}
+.title:hover::after{
     opacity: 1;
 }
+
 .subhead{
     position: absolute;
     white-space: nowrap;
@@ -214,12 +256,16 @@ h6{
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
-    margin:0;
-    padding: 4px;
-    transition: color 0.1s ease;
+    margin: 4px;;
+    padding: 0px;
+    /* border-radius: 2px; */
+
+    /* transition: color 0.1s ease; */
 }
 h6:hover{
+    /* color:#030502; */
     color: #669743;
+    outline: 4px dotted #669743;
 }
 .playTitles{
     font-weight: 500;
@@ -486,13 +532,14 @@ footer{
     /* position: fixed;
     bottom: 4px;
     right: 1vw; */
-    margin-bottom: 4px;
+    margin-bottom: 4px;    
+    padding: 4px;
 }
 footer h6{
     opacity: 0.6;
     font-size: 12px;
     font-weight: 300;
-    padding: 4px;
+    /* padding: 4px; */
 }
 :root{
     animation: animate-time 1000ms linear infinite;    
