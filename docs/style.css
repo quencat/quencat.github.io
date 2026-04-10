@@ -11,6 +11,7 @@ body{
     /* min-height: 100vh; */
     margin-bottom: 40px;
     /* cursor: url('img/cursorQ.png'), auto; */
+    cursor: url('img/mouse.svg') 64 64, auto;
 }
 a{
     all: unset;
@@ -18,7 +19,8 @@ a{
 }
 a:hover{
     /* cursor: url('img/cursorPointer.png'), auto; */
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: url('img/pointer.svg') 64 64, auto;
 }
 /* a:active{
     color: #A6CE8A;
