@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "ShadowPuppet";
+    src: url('/img/handPuppets2.otf') format('opentype');
+    font-display: swap;
+}
 body{
     background-image: url("img/background.jpg");
     background-color: #161916;
@@ -28,7 +33,7 @@ a:hover{
 h1{
     display: inline-block;
     /* font-family: "Playfair", serif; */
-    /* font-family: "Vollkorn", serif; */
+    /* font-family: "ShadowPuppet", sans-serif; */
     font-family: "Jost", sans-serif;
     font-weight: 450;
     font-size: 70px;
