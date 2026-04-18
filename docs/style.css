@@ -368,6 +368,21 @@ p{
     opacity: 0;
     transition: opacity 0.6s ease;
 }
+.shadowPuppetText{
+    font-family: 'ShadowPuppet'; 
+    color: #E9F3E2;
+}
+#puppet1 {
+    font-size: 160px;
+}
+#puppet2{
+    font-size: 72px;
+}
+#puppet3{
+    font-size: 72px; 
+    line-height: 120px; 
+    white-space: nowrap;
+}
 @media (max-width: 600px){
     .topParagraph {
         margin-left: 2%;
@@ -382,6 +397,17 @@ p{
     p{
         font-size: 16px;
     }
+    #puppet1{
+        font-size: 40px;
+    }
+    #puppet2{
+        font-size: 40px;
+    }   
+    #puppet3{
+        font-size: 40px;
+        line-height: 48px; 
+        white-space: normal;
+    }   
 }
 p.is-revealed{
     opacity: 1;
