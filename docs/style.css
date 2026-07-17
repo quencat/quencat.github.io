@@ -63,6 +63,7 @@ h2{
     margin-left: 40px;
     margin-right: 16px;
     /* transition: color 0.1s ease; */
+    margin-bottom: 24px;
 }
 h2:hover{
     color: #1B291B;
@@ -129,7 +130,7 @@ h3:hover{
     /* padding-bottom: 70px; */
     /* padding-right: 400px; */
     z-index: -1;
-    border-radius: 20px;
+    border-radius: 24px;
     /* background: radial-gradient(50% 80% at 20% 50%, #EEF2DA 0%, #7AB550 100%); */
     background: conic-gradient(
         from var(--deg) at left,
@@ -175,7 +176,7 @@ h3:hover{
 .subhead{
     position: absolute;
     white-space: nowrap;
-    left:0%;
+    left:90%;
     top: -8px;;
     opacity: 0;
     font-size: 14px;
@@ -192,7 +193,7 @@ h3:hover{
 }
 .title:hover .subhead{
     opacity: 100%;
-    left: 100%;
+    left: 108%;
 
 }
 .thumbnail{
@@ -224,9 +225,9 @@ h3:hover{
         font-size: 16px;
     }
     h3{
-        font-size: 20px;
-        padding-top: 3%;
-        padding-bottom: 4%;
+        font-size: 16px;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
     h3:hover{
         background-color: #7AB55099;
@@ -320,6 +321,16 @@ h6:hover{
     padding-top: 32px;
     padding-bottom: 32px; */
 
+    /* margin-left: 0;
+    margin-right: 0;
+
+    padding-left: 4px;
+    padding-right: 4px;
+
+    margin-top: 20%;
+    padding-top: 0;
+    padding-bottom: 0; */
+
     margin-left: 0;
     margin-right: 0;
 
@@ -331,12 +342,13 @@ h6:hover{
     padding-bottom: 0;
 
 
-
-
-
     /* background-color: #0A0F07BB; */
-    background-color: #0A0F0770;
-    border-radius: 2px 2px 40px 2px;
+    /* background-color: #0A0F0770;
+    border-radius: 2px 2px 40px 2px; */
+    outline: 4px solid #030502;
+    background-color: #DBE7DF;
+    color: #0A0F07;
+    border-radius: 0px 0px 40px 0px;
 
 
     opacity: 0;
@@ -346,7 +358,6 @@ h6:hover{
     opacity: 1;
 }
 .topParagraphText{
-    
     font-family: "Jost", sans-serif;
     /* font-size: 22px; */
     /* line-height: 36px; */
@@ -372,6 +383,9 @@ p{
     padding-right: 5%;
     opacity: 0;
     transition: opacity 0.6s ease;
+}
+p:hover{
+    cursor: url('img/Ibeam.svg') 32 32, auto;
 }
 .shadowPuppetText{
     font-family: 'ShadowPuppet'; 
@@ -431,9 +445,13 @@ p.is-revealed{
     min-width: 0px;
     /* background-color: white; */
 }
+
 mark{
     background-color: inherit;
     color: #C0FAC0;
+}
+.topParagraphText mark{
+    color: #669743;
 }
 .italics{
     font-style: italic;

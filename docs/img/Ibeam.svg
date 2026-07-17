@@ -1,0 +1,22 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-outside-1_408_2" maskUnits="userSpaceOnUse" x="31" y="39" width="13" height="15" fill="black">
+<rect fill="white" x="31" y="39" width="13" height="15"/>
+<path d="M42.5 50.1865C39.3076 52.0297 35.6863 53 32 53L32 42.5C33.8431 42.5 35.6538 42.0148 37.25 41.0933L42.5 50.1865Z"/>
+</mask>
+<path d="M42.5 50.1865C39.3076 52.0297 35.6863 53 32 53L32 42.5C33.8431 42.5 35.6538 42.0148 37.25 41.0933L42.5 50.1865Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1_408_2)"/>
+<mask id="path-2-outside-2_408_2" maskUnits="userSpaceOnUse" x="20" y="39" width="13" height="15" fill="black">
+<rect fill="white" x="20" y="39" width="13" height="15"/>
+<path d="M32 53C28.3137 53 24.6924 52.0297 21.5 50.1865L26.75 41.0933C28.3462 42.0148 30.1569 42.5 32 42.5L32 53Z"/>
+</mask>
+<path d="M32 53C28.3137 53 24.6924 52.0297 21.5 50.1865L26.75 41.0933C28.3462 42.0148 30.1569 42.5 32 42.5L32 53Z" stroke="white" stroke-width="2" mask="url(#path-2-outside-2_408_2)"/>
+<mask id="path-3-outside-3_408_2" maskUnits="userSpaceOnUse" x="20" y="10" width="13" height="15" fill="black">
+<rect fill="white" x="20" y="10" width="13" height="15"/>
+<path d="M21.5 13.8135C24.6924 11.9703 28.3137 11 32 11L32 21.5C30.1569 21.5 28.3462 21.9852 26.75 22.9067L21.5 13.8135Z"/>
+</mask>
+<path d="M21.5 13.8135C24.6924 11.9703 28.3137 11 32 11L32 21.5C30.1569 21.5 28.3462 21.9852 26.75 22.9067L21.5 13.8135Z" stroke="white" stroke-width="2" mask="url(#path-3-outside-3_408_2)"/>
+<mask id="path-4-outside-4_408_2" maskUnits="userSpaceOnUse" x="31" y="10" width="13" height="15" fill="black">
+<rect fill="white" x="31" y="10" width="13" height="15"/>
+<path d="M32 11C35.6863 11 39.3076 11.9703 42.5 13.8135L37.25 22.9067C35.6538 21.9852 33.8431 21.5 32 21.5L32 11Z"/>
+</mask>
+<path d="M32 11C35.6863 11 39.3076 11.9703 42.5 13.8135L37.25 22.9067C35.6538 21.9852 33.8431 21.5 32 21.5L32 11Z" stroke="white" stroke-width="2" mask="url(#path-4-outside-4_408_2)"/>
+</svg>
