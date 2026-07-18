@@ -87,7 +87,7 @@ h3{
     text-align: left;
     transition: color 0.1s ease, padding-left 0.1s ease, font-weight 0.1s ease, border-bottom 0.02s ease; 
     /* border-radius: 2px; */
-    border-bottom: 4px dotted #4E504680;
+    /* border-bottom: 4px dotted #4E504680; */
     z-index: 100;
 }
 h3:hover{
@@ -97,7 +97,7 @@ h3:hover{
     /* background: linear-gradient(90deg, #D7DAD9 0%, #7AB550 50%); */
     /* background: linear-gradient(50% 50% at 50% 50%, #D7DAD9 0%, #7AB550 100%); */
     padding-left: 30px;
-    border-bottom: 4px dotted #4E504600;
+    /* border-bottom: 4px dotted #4E504600; */
 }
 
 .title{
@@ -110,7 +110,7 @@ h3:hover{
 }
 .title:hover .thumbnail{
     opacity: 100%;
-    right: 1vw;
+    right: 8vw;
     rotate: 0deg;
 
 }
@@ -200,7 +200,7 @@ h3:hover{
     position: fixed;
     right: 4vw;
     /* top: 25%; */
-    top: 20px;
+    top: 100px;
     opacity: 0%;
     transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
     z-index: -101;
@@ -209,12 +209,16 @@ h3:hover{
     border-radius: 2px;
     /* width: 844px; */
     /* width: 58vw; */
-    width: 72vw;
+    width: 60vw;
     height: auto;
     
-    box-shadow: 12px 12px 16px #070A0490;
+    box-shadow: 0px 0px 50px 10px #D7DAD940;
 }
 .title:hover ~ .imageLibraryContainerMain{
+    z-index: -300;
+    opacity: 20%;
+}
+.title:hover ~ .containerMain{
     z-index: -300;
 }
 @media (max-width: 600px) {
@@ -499,47 +503,9 @@ mark{
     vertical-align: middle;
     border-radius: 2px;
 }
-.imageLibraryContainerMain{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0; 
-    position: absolute;
-    width: 72vw;
-    top:10px;
-    right:1vw;
-    /* z-index: 1; */
-}
-.columnMain{
-    flex: 30;
-    padding: 0px 30px;
-}
-.columnMain .smallImg {
-    margin: 20px 0px 40px 0px;
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-    border-radius: 2px;
-    transition: opacity 1s ease, border-radius 0.1s ease;
-}
-.smallImg:hover{
-    border-radius: 50%;
-}
+
 .fade-out{
     opacity: 0;
-}
-@media (max-width: 600px){
-    .imageLibraryContainerMain{
-        position: relative;
-        width: 100%;
-        top: 0;
-        right: inherit;
-    }
-    .columnMain{
-        padding: 0px 4px;
-    }
-    .columnMain .smallImg{
-        margin: 4px;    
-    }
 }
 .bubbleCont{
     display: flex;
